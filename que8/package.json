@@ -1,0 +1,19 @@
+{
+  "name": "question_8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "node server.js",
+    "hello": "echo \"Hello, this is a user-defined script!\"",
+    "build": "echo \"Build script running...\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
