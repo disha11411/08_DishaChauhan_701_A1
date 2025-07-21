@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello NodeJS App</title>
+</head>
+<body>
+  <h1>Node.js AJAX Example</h1>
+  <button id="getHelloBtn">Get Hello</button>
+  <p id="response"></p>
+
+  <script>
+    document.getElementById('getHelloBtn').addEventListener('click', () => {
+      fetch('/gethello')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('response').innerText = data;
+        })
+        .catch(error => {
+          console.error('Error fetching hello:', error);
+        });
+    });
+  </script>
+</body>
+</html>
